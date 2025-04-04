@@ -27,17 +27,17 @@ STAPI void insertPlayerEvent(
     const std::string&    dimension,
     double                x              = 0,
     double                y              = 0,
-    double                z              = 0,
-    const std::string&    target         = "",
-    const nlohmann::json& additionalData = {}
+    double                z                   = 0,
+    const std::string&    target              = "",
+    const std::string&    additionalDataStr = "{}" // Changed from nlohmann::json
 );
 
 /**
  * @brief Records a server-level event
  * @param eventType Event classification identifier
- * @param additionalData JSON payload (default: empty object)
+ * @param additionalDataStr JSON string payload (default: empty JSON object string "{}")
  */
-STAPI void insertServerEvent(const std::string& eventType, const nlohmann::json& additionalData = {});
+STAPI void insertServerEvent(const std::string& eventType, const std::string& additionalDataStr = "{}"); // Changed from nlohmann::json
 
 /**
  * @brief Records a world-related event
@@ -54,9 +54,9 @@ STAPI void insertWorldEvent(
     const std::string&    trigger        = "",
     const std::string&    dimension      = "",
     double                x              = 0,
-    double                y              = 0,
-    double                z              = 0,
-    const nlohmann::json& additionalData = {}
+    double                y                   = 0,
+    double                z                   = 0,
+    const std::string&    additionalDataStr = "{}" // Changed from nlohmann::json
 );
 
 

@@ -1,0 +1,41 @@
+{
+    "format_version": 3,
+    "format_uuid": "ed9738f2-1677-42b7-99c7-3d392f14ad55",
+    "tooth": "github.com/yangyangzhong82/Satori-Release",
+    "version": "0.4.0",
+    "info": {
+        "name": "Satori",
+        "description": "Satori is a lightweight Minecraft plugin that monitors and logs player actions to help keep your server secure.",
+        "author": "yangyangzhong82、Singl",
+        "tags": [
+            "platform:levilamina",
+            "type:mod",
+            "Satori"
+        ],
+        "avatar_url": "https://github.com/yangyangzhong82/Satori-Release/blob/main/icon.png"
+    },
+    "variants": [
+        {
+            "platform": "win-x64",
+            "dependencies": {
+                "github.com/LiteLDev/LeviLamina": ">=1.2.0-rc.1"
+            },
+            "assets": [
+                {
+                    "type": "self",
+                    "urls": [],
+                    "placements": [
+                        {
+                            "type": "dir",
+                            "src": "bin/Satori",
+                            "dest": "plugins/Satori/"
+                        }
+                    ]
+                }
+            ],
+            "remove_files": [
+                "plugins/Satori"
+            ]
+        }
+    ]
+}

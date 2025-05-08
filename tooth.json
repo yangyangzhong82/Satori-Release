@@ -18,7 +18,8 @@
         {
             "platform": "win-x64",
             "dependencies": {
-                "github.com/LiteLDev/LeviLamina": ">=1.2.0-rc.1"
+                "github.com/LiteLDev/LeviLamina": ">=1.2.0-rc.1",
+                "github.com/MiracleForest/iListenAttentively-Release": ">=0.5.0-rc.1"
             },
             "assets": [
                 {
